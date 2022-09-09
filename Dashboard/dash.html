@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Scrap Dashboard</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="dash.css">
+    
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <!--Sidebar-->
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h1><span class="lab la-accusoft"></span> <span>Scrap Deal</span></h1>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="" class="active"><span class="las la-igloo"></span>
+                    <span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="customer.html"><span class="las la-users"></span>
+                    <span>Customer</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-clipboard-list"></span>
+                    <span>Our Request</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-shopping-bag"></span>
+                    <span>Orders</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-receipt"></span>
+                    <span>Inventory</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-user-circle"></span>
+                    <span>Vendors</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-clipboard-list"></span>
+                    <span>Report</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="main-content">
+        <!--Header-->
+        <header>
+            <h1>
+<!--<div class="header-title">-->
+                <label for="nav-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+                Dashboard
+            </h1>
+
+            <div class="search-wrapper">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="Search here"/>
+            </div>
+
+            <div class="user-wrapper">
+                <img src="image/group.jpg" alt="" width="40px" height="40px">
+                <div>
+                    <h4>Scrap Deal</h4>
+                    <small>Admin page</small>
+                </div>
+            </div>
+        </header>
+    
+
+        <main>
+            <!--cards-->
+       <div class="card">
+           <div class="card-single">
+               <div>
+                   <h1>42</h1>
+                  <span>Vendors</span>
+               </div>
+            <div>
+               <span class="las la-users"></span>
+            </div>
+        </div>
+
+           <div class="card-single">
+            <div>
+                <h1>72</h1>
+               <span>Request Deliverd</span>
+            </div>
+            <div>
+            
+            <span class="las la-clipboard-list"></span>
+        </div>
+    </div>
+
+
+
+        <div class="card-single">
+            <div>
+                <h1>104</h1>
+               <span>Request Orders</span>
+            </div>
+            <div>
+            <span class="las la-shopping-bag"></span>
+        </div>
+    </div>
+
+        <div class="card-single">
+            <div>
+                <h1>Rs.12k</h1>
+               <span>Profit</span>
+            </div>
+            <div>
+            <span class="las la-wallet"></span>
+        </div>
+    </div>
+</div>
+
+<!--Charst-->
+<div class="charts">
+    <div class="charts__left">
+      <div class="charts__left__title">
+        <div>
+          <h1>Daily Reports</h1>
+          <p>Mumbai,Navi-Mumbai,Thane</p>
+        </div>
+        <i class="fa fa-usd" aria-hidden="true"></i>
+      </div>
+      <div id="apex1"></div>
+    </div>
+
+    <div class="charts__right">
+      <div class="charts__right__title">
+        <div>
+          <h1>Total Analysis Reports</h1>
+          <p>Mumbai,Navi-Mumbai,Thane</p>
+        </div>
+        <i class="fa fa-usd" aria-hidden="true"></i>
+      </div>
+
+      <div class="charts__right__cards">
+        <div class="card1">
+          <h1>Total-Income</h1>
+          <p>Rs.95,300</p>
+        </div>
+
+        <div class="card2">
+          <h1>Successful Request</h1>
+          <p>24,200</p>
+        </div>
+
+        <div class="card3">
+          <h1>Our-Users</h1>
+          <p>2500</p>
+        </div>
+
+        <div class="card4">
+          <h1>Cancelled Request</h1>
+          <p>1881</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<!--Projects color: #35a4ba;  color: #38e1b0;  color: #f65a6f;-->
+<div class="recent-grid">
+    <div class="projects">
+        <!--product-->
+        <div class="cards">
+            <div class="card-header">
+                <h3>Recent Request</h3>
+
+                <button>See all <span class="las la-arrow-right">
+
+                </span></button>
+            </div>
+             
+            <div class="card-body">
+                <div class="table-responsive">
+                <table width="100%">
+                        <thead>
+                            <tr>
+                                <td>Customer Name</td>
+                                <td>Phone</td>
+                                <td>E-mail</td>
+                                <td>Address</td>
+                                <td>City</td>
+                                <td>Request Status</td>
+                              
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Rajiv Kumar</td>
+                                <td>8974652310</td>
+                                <td>rajivkumar12@gmail.com</td>
+                                <td>Gandhi marg</td>
+                                <td>Mumbai</td>
+                            
+                                <td>
+                                    <span class="status green"></span>
+                                    Successful
+                                </td>
+                            </tr>
+                            <tr>
+                                
+                                <td>Raju</td>
+                                <td>9****52310</td>
+                                <td>raju21@gmail.com</td>
+                                <td>vidyavihar</td>
+                                <td>Mumbai</td>
+                                <td>
+                                    <span class="status pink"></span>
+                                    In Progress
+                                </td>
+                            </tr>
+                            <tr>
+                               
+                                <td>sunny</td>
+                                <td>7465**2310</td>
+                                <td>sunny87@gmail.com</td>
+                                <td>bhindi bazar</td>
+                                <td>Mumbai</td> 
+                                
+                                <td>
+                                    <span class="status orange"></span>
+                                    Pending
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Rajiv Kumar</td>
+                                <td>8974652310</td>
+                                <td>rajivkumar12@gmail.com</td>
+                                <td>Gandhi marg</td>
+                                <td>Mumbai</td>
+                            
+                                <td>
+                                    <span class="status green"></span>
+                                    Successful
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                
+                                <td>Raju</td>
+                                <td>9****52310</td>
+                                <td>raju21@gmail.com</td>
+                                <td>vidyavihar</td>
+                                <td>Mumbai</td>
+                                <td>
+                                    <span class="status pink"></span>
+                                    In Progress
+                                </td>
+                            </tr>
+                            <tr>
+                               
+                                <td>sunny</td>
+                                <td>7465**2310</td>
+                                <td>sunny87@gmail.com</td>
+                                <td>bhindi bazar</td>
+                                <td>Mumbai</td> 
+                                
+                                <td>
+                                    <span class="status orange"></span>
+                                    Pending
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Rajiv Kumar</td>
+                                <td>8974652310</td>
+                                <td>rajivkumar12@gmail.com</td>
+                                <td>Gandhi marg</td>
+                                <td>Mumbai</td>
+                            
+                                <td>
+                                    <span class="status green"></span>
+                                    Successful
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                
+                                <td>Raju</td>
+                                <td>9****52310</td>
+                                <td>raju21@gmail.com</td>
+                                <td>vidyavihar</td>
+                                <td>Mumbai</td>
+                                <td>
+                                    <span class="status pink"></span>
+                                    In Progress
+                                </td>
+                            </tr>
+                            <tr>
+                               
+                                <td>sunny</td>
+                                <td>7465**2310</td>
+                                <td>sunny87@gmail.com</td>
+                                <td>bhindi bazar</td>
+                                <td>Mumbai</td> 
+                                
+                                <td>
+                                    <span class="status orange"></span>
+                                    Pending
+                                </td>
+                            </tr>
+                            
+                            
+                        </tbody>
+                </table>
+            </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--customers-->
+<div class="customers">
+    <div class="cards">
+        <div class="card-header">
+            <h3>New Vendors</h3>
+
+            <button>See all <span class="las la-arrow-right">
+
+            </span></button>
+        </div>
+         
+        <div class="card-body">
+<div class="customer">
+<div class="info">
+    <img src="image/gent.jpg" width="40px" height="40px" alt="">
+    <div>
+        <h4>vijay rathod</h4>
+        <small>vidya vihar</small>
+    </div>
+</div>
+<div class="contact">
+    <span class="las la-user-circle"></span>
+    <span class="las la-comment"></span>
+    <span class="las la-phone"></span>
+</div>
+</div>
+<div class="customer">
+    <div class="info">
+        <img src="image/geant2.png" width="40px" height="40px" alt="">
+        <div>
+            <h4>Rakesh singh</h4>
+            <small>vashi</small>
+        </div>
+    </div>
+    <div class="contact">
+        <span class="las la-user-circle"></span>
+        <span class="las la-comment"></span>
+        <span class="las la-phone"></span>
+    </div>
+    </div>
+    <div class="customer">
+        <div class="info">
+            <img src="image/lady.png" width="40px" height="40px" alt="">
+            <div>
+                <h4>Sunaina patel</h4>
+                <small>bandra</small>
+            </div>
+        </div>
+        <div class="contact">
+            <span class="las la-user-circle"></span>
+            <span class="las la-comment"></span>
+            <span class="las la-phone"></span>
+        </div>
+        </div>
+        <div class="customer">
+            <div class="info">
+                <img src="image/lady.png" width="40px" height="40px" alt="">
+                <div>
+                    <h4>Priya rathod</h4>
+                    <small>wadala</small>
+                </div>
+            </div>
+            <div class="contact">
+                <span class="las la-user-circle"></span>
+                <span class="las la-comment"></span>
+                <span class="las la-phone"></span>
+            </div>
+            </div>
+            <div class="customer">
+                <div class="info">
+                    <img src="image/geant3.png" width="40px" height="40px" alt="">
+                    <div>
+                        <h4>Kazim khan</h4>
+                        <small>Chunnabhatti</small>
+                    </div>
+                </div>
+                <div class="contact">
+                    <span class="las la-user-circle"></span>
+                    <span class="las la-comment"></span>
+                    <span class="las la-phone"></span>
+                </div>
+                </div>
+                <div class="customer">
+                    <div class="info">
+                        <img src="image/geant2.png" width="40px" height="40px" alt="">
+                        <div>
+                            <h4>Rafique alam</h4>
+                            <small>Ghatkoper</small>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <span class="las la-user-circle"></span>
+                        <span class="las la-comment"></span>
+                        <span class="las la-phone"></span>
+                    </div>
+                    </div>
+                    <div class="customer">
+                        <div class="info">
+                            <img src="image/lady.png" width="40px" height="40px" alt="">
+                            <div>
+                                <h4>Neha</h4>
+                                <small>Shivaji nagar</small>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <span class="las la-user-circle"></span>
+                            <span class="las la-comment"></span>
+                            <span class="las la-phone"></span>
+                        </div>
+                        </div>
+                        <div class="customer">
+                            <div class="info">
+                                <img src="image/geant3.png" width="40px" height="40px" alt="">
+                                <div>
+                                    <h4>Pankaj</h4>
+                                    <small>mahim</small>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <span class="las la-user-circle"></span>
+                                <span class="las la-comment"></span>
+                                <span class="las la-phone"></span>
+                            </div>
+                            </div>
+                            <div class="customer">
+                                <div class="info">
+                                    <img src="image/gent.jpg" width="40px" height="40px" alt="">
+                                    <div>
+                                        <h4>Rajiv</h4>
+                                        <small>kurla</small>
+                                    </div>
+                                </div>
+                                <div class="contact">
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comment"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
+                                </div>
+                        
+</div>
+</div>
+</main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="chart.js"></script>
+</body>
+</html>
